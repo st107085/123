@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>小秋的地震/海嘯資訊中心 - [ACCESS GRANTED]</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>[ SYSTEM: CWA DATA MONITOR ]</h1>
+        <p>資料由中央氣象署提供，每 5 分鐘自動更新。</p>
+    </header>
+    
+    <nav>
+        <a href="index.html">0. SYSTEM STATUS</a>
+        <a href="page1_grid.html">1. GRID INTENSITY</a>
+        <a href="page2_tsunami.html">2. TSUNAMI ALERT</a>
+        <a href="page3_report.html">3. SIGNIFICANT REPORT</a>
+        <a href="page4_minor.html">4. MINOR REPORT</a>
+        <a href="page5_shakemap.html">5. SHAKEMAP IMAGE</a>
+        <a href="page6_waveform.html">6. WAVEFORM DATA</a>
+        <a href="page7_county_intensity.html">7. COUNTY INTENSITY</a>
+    </nav>
+    
+    <div class="container">
+        <div class="data-section">
+            <h2>SYSTEM STATUS (系統狀態)</h2>
+            <p style="color: var(--main-color);">核心任務：抓取並顯示 CWA 7 項即時地震與海嘯資料。</p>
+            <p><strong>自動更新狀態：</strong><span style="color: var(--accent-color);">已啟用 GitHub Actions 排程 (Cron: */5 * * * *)</span></p>
+            <p>後端腳本：<code>命令提示字元.py</code></p>
+            <p>前端呈現：GitHub Pages + 高科技 UI 樣式</p>
+            
+            <h3 style="margin-top: 40px;">7 項資料模組連結：</h3>
+            <ul>
+                <li><a class="download-link" href="page3_report.html">3. 顯著有感地震報告 (E-A0015-001) - **範例頁面**</a></li>
+                <li><a class="download-link" href="page5_shakemap.html">5. 顯著地震：等震度圖 (E-A0015-003) - **檔案連結範例頁面**</a></li>
+                <li><a class="download-link" href="page1_grid.html">1. 地震網格化等震度 (NCDR)</a></li>
+                <li><a class="download-link" href="page2_tsunami.html">2. 海嘯資訊 (E-A0014-001)</a></li>
+                <li><a class="download-link" href="page4_minor.html">4. 小區域有感地震報告 (E-A0016-001)</a></li>
+                <li><a class="download-link" href="page6_waveform.html">6. 強地動波形 (E-A0015-004)</a></li>
+                <li><a class="download-link" href="page7_county_intensity.html">7. 縣市行政區觀測震度 (E-A0015-005)</a></li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
